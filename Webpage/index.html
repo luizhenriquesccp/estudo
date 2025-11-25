@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Portfólio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/img/perfil.jpeg"
+              alt="Luiz Henrique Lima da Silva"
+              class="user me-3"
+              style="width: 50px; height: 50px"
+            />
+            <a class="navbar-brand" href="#">Luiz Henrique Lima da Silva</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home"
+                  ><i class="fa-solid fa-home"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"
+                  ><i class="fa-solid fa-user"></i> Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#things"
+                  ><i class="fa-solid fa-book"></i> Curiosidades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tales"
+                  ><i class="fa-solid fa-t"></i> Causos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#port"
+                  ><i class="fa-solid fa-address-book"></i> Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rotina"
+                  ><i class="fa-solid fa-clock"></i> Rotina</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main style="padding-top: 30px">
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Bem-vindo ao meu Portfólio!</h1>
+          <p>Explore meus projetos e saiba mais sobre mim.</p>
+        </div>
+      </section>
+      <section class="sobre_min" id="about">
+        <br />
+        <h2>Sobre Mim</h2>
+        <br />
+        <p>
+          Bem, eu tenho 18 anos de idade, sou estudante do terceiro ano do
+          ensino médio, do curso de informática do IFRN, gosto da area da
+           programação, mais especificamente backend. Estou aprendendo a programar e espero trabalhar na área
+          de desenvolvimento frontend, backend ou fullstack no futuro.
+        </p>
+        <p>
+          Mas além disso também sei mexer com banco de dados, criar jogos(mesmo que simples), edição de imagens e
+          edição de vídeos, além de outras habilidades relacionadas à tecnologia, como pacote 
+          office por exemplo.
+        </p>
+      </section>
+      <section class="portfolio" id="port">
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>PYTHON</h4>
+          <p>Simples, rápido e viciante, essa foi a primeira linguagem que aprendi</p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>JAVASCRIPT</h4>
+          <p>A que acho mais divertida. Onde tudo funciona… até parar de funcionar</p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>HTML</h4>
+          <p>
+            Além de programas desenvolvidos na escola, eu faço, no tempo livre,
+            projetos pessoais
+          </p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>CSS</h4>
+          <p>Amor e ódio em forma de código</p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>FLASK</h4>
+          <p></p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>C++</h4>
+          <p>A que tenho mais dificuldade (mas estou melhorando!)</p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4>SQL</h4>
+          <p></p>
+        </div>
+        <div class="cards">
+          <img src="assets/img/" />
+          <h4></h4>
+          <p></p>
+        </div>
+      </section>
+      <section>
+        <div
+          id="myCarousel"
+          class="carousel slide mb-6"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/hero.JPG"
+                class="bd-placeholder-img d-block w-100"
+                alt="Slide 1"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Example headline.</h1>
+                  <p class="opacity-75">
+                    Some representative placeholder content for the first slide
+                    of the carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/hero.JPG"
+                class="bd-placeholder-img d-block w-100"
+                alt="Slide 2"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>
+                    Some representative placeholder content for the second slide
+                    of the carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/hero.JPG"
+                class="bd-placeholder-img d-block w-100"
+                alt="Slide 3"
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#"
+                      >Browse gallery</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3" id="FD">
+          <h5>MAPA DO SITE</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="#"
+                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="#"
+                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="#"
+                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="#"
+                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >FAQs</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="#"
+                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h5>Redes Sociais</h5>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/luiz-henrique-8412a131a "
+              class="text-white me-3"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/luizinhobr7"
+              class="text-white me-3"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/luizhenriquesccp" class="text-white">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

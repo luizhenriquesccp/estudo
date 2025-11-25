@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header {
+  background-color: #0b1531;
+}
+.user {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fe5e0d;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(254, 94, 13) !important;
+}
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #fe5e0d !important;
+}
+.nav-link i {
+  margin-right: 5px;
+}
+.b-example-divider {
+        width: 100%;
+        height: 1rem;
+        background-color: #00000007;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #00000026,
+          inset 0 0.125em 0.5em #00000026;
+      }
+
+
+.hero {
+  background-image: url('/Webpage/assets/img/hero.JPG');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.sobre_min{
+  border-top: 1px solid #120e0e51;
+  border-bottom: 1px solid #120e0e51;
+  margin: 1.3px;
+}
+.sobre_min p{
+  text-indent: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  font-size: 1.1em;
+  color: #000000;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .sobre_min p {
+    margin: 5vw;
+  }
+}
+.portfolio {
+  background-color: #fe5e0d;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.cards {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 300px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.cards img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.cards h4{
+  margin: 12px 0 8px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.cards p {
+  margin: 0 12px 12px 12px;
+  font-size: 0.9em;
+  color: #000000;
+}
+.cards:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+main {
+  flex: 1;
+}
+footer{  
+  background-color: #0b1531;
+  color: #fe5e0d;
+  width: 100%;
+}
+#FD {
+  padding-left: 50px;
+  border-right: 1px solid #8180808a;
+}
+footer a{
+  color: #fe5e0d;
+  text-decoration: none;
+}
+footer i:hover{
+  color: #fe5e0d;
+  transition: color 0.5s;
+}
+
+@media (min-width: 768px) {
+  footer.d-flex {
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  footer > div {
+    flex: 1;
+  }
+  footer > div:first-child {
+    justify-content: flex-start;
+  }
+  footer > div:last-child {
+    justify-content: flex-end;
+  }
+}

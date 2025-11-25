@@ -55,7 +55,7 @@ header {
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
-  height: 500px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +194,21 @@ header {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-
+@media (max-width: 600px) {
+  .cards {
+    width: 80px;
+    height: auto;
+  }
+  .cards img {
+    height: auto;
+  }
+  .cards h4{
+    font-size: 0.8em;
+  }
+  .cards p {
+    display: none;
+  }
+}
 
 main {
   flex: 1;

@@ -103,6 +103,12 @@ header {
 .carousel-item {
   height: 32rem;
 }
+.carousel-item img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -180,6 +186,10 @@ header {
   height: 150px;
   object-fit: cover;
 }
+.cards i {
+  font-size: 80px;
+  margin-top: 20px;
+}
 .cards h4{
   margin: 12px 0 8px 0;
   font-size: 1.2em;
@@ -194,6 +204,9 @@ header {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+svg {
+  color: #fe5e0d;
+}
 @media (max-width: 600px) {
   .cards {
     width: 80px;
@@ -207,6 +220,10 @@ header {
   }
   .cards p {
     display: none;
+  }
+  .cards i {
+    font-size: 50px;
+    margin-top: 10px;
   }
 }
 

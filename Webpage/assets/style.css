@@ -94,6 +94,7 @@ header {
 
 .carousel {
   margin-bottom: 4rem;
+  margin-top: 20vh;
 }
 .carousel-caption {
   bottom: 3rem;
@@ -161,11 +162,17 @@ header {
   .sobre_min p {
     margin: 5vw;
   }
+  .title {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  }
+}
+.title {
+  text-align: left;
+  margin: 60px 0 20px 5vh;
 }
 .portfolio {
-  background-color: #fe5e0d;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  background-color: #0b1531;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;

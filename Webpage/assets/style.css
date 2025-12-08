@@ -105,10 +105,13 @@ header {
   height: 32rem;
 }
 .carousel-item img {
-  height: 100vh;
+  height: auto; /* evita imagens gigantes que cobrem a tela */
+  max-height: 70vh; /* limita a altura das imagens do carrossel */
   width: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
+  margin: 0 auto;
 }
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -276,9 +279,12 @@ footer i:hover{
 
 /* Modal carousel image */
 .modal .carousel-item img {
+  height: auto; /* evita herdar height:100vh do carrossel principal */
   max-height: 70vh;
   object-fit: contain;
   width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {

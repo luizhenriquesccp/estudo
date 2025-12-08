@@ -103,55 +103,233 @@
             </svg>
             <span class="fs-4">Jumbotron example</span>
           </a>
-        </header>
-        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">
-              Using a series of utilities, you can create this jumbotron, just
-              like the one in previous versions of Bootstrap. Check out the
-              examples below for how you can remix and restyle it to your
-              liking.
-            </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Example button
-            </button>
-          </div>
-        </div>
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="h-100 p-5 text-bg-dark rounded-3">
-              <h2>Change the background</h2>
-              <p>
-                Swap the background-color utility and add a `.text-*` color
-                utility to mix up the jumbotron look. Then, mix and match with
-                additional component themes and more.
+        </header>       
+        <section id="projects" class="mt-5">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="fw-bold">Meus Projetos</h2>
+              <p class="text-muted mb-0">
+                Clique nas imagens para ver em tamanho maior
               </p>
-              <button class="btn btn-outline-light" type="button">
-                Example button
-              </button>
+            </div>
+
+            <div class="row projects-grid">
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/respiraai.png"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 1"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Setembro Amarelo (Projeto escolar)
+                        </h5>
+                        <p class="card-text">
+                          Página informativa desenvolvida com HTML, CSS e
+                          JavaScript para conscientização sobre saúde mental.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Tecnologias: HTML, CSS, JS</small
+                          >
+                        </p>
+                        <a
+                          href="https://luizhenriquesccp.github.io/SetembroAmarelo/"
+                          target="_blank"
+                          class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        <button
+                          class="btn btn-sm btn-outline-secondary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProject1"
+                        >
+                          Galeria
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card project-card h-100 shadow-sm">
+                  <div class="row g-0">
+                    <div class="col-4">
+                      <img
+                        src="assets/img/hero.JPG"
+                        class="img-fluid project-thumb"
+                        alt="Projeto 2"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Site Pessoal / Portfólio</h5>
+                        <p class="card-text">
+                          Portfólio responsivo com seções de sobre, projetos e
+                          contato — construído com Bootstrap e CSS customizado.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Tecnologias: Bootstrap, CSS</small
+                          >
+                        </p>
+                        <a href="index.html" class="btn btn-sm btn-primary me-2"
+                          >Ver site</a
+                        >
+                        <button
+                          class="btn btn-sm btn-outline-secondary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalProject2"
+                        >
+                          Galeria
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>Add borders</h2>
-              <p>
-                Or, keep it light and add a border for some added definition to
-                the boundaries of your content. Be sure to look under the hood
-                at the source HTML here as we've adjusted the alignment and
-                sizing of both column's content for equal-height.
-              </p>
-              <button class="btn btn-outline-secondary" type="button">
-                Example button
-              </button>
-            </div>
-          </div>
-        </div>
+        </section>
         <footer class="pt-3 mt-4 text-body-secondary border-top">
           &copy; 2025
         </footer>
       </div>
     </main>
+    <!-- Modals for project galleries -->
+    <div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Galeria - Setembro Amarelo</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="carouselProj1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/respiraai.png"
+                    class="d-block w-100"
+                    alt="slide1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/hero.JPG"
+                    class="d-block w-100"
+                    alt="slide2"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProj1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProj1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProject2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Galeria - Portfólio</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="carouselProj2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/hero.JPG"
+                    class="d-block w-100"
+                    alt="slide1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/respiraai.png"
+                    class="d-block w-100"
+                    alt="slide2"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProj2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProj2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="py-5">
       <div class="row">
         <div class="col-6 col-md-2 mb-3" id="FD">

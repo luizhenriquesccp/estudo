@@ -172,7 +172,6 @@ header {
   margin: 60px 0 20px 5vh;
 }
 .portfolio {
-  background-color: #0b1531;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
@@ -180,8 +179,8 @@ header {
 .cards {
   display: inline-block;
   vertical-align: top;
-  width: 220px;
-  height: 300px;
+  width: 80px;
+  height: auto;
   margin: 10px;
   background-color: #f0f0f0;
   border-radius: 15px;
@@ -190,19 +189,20 @@ header {
 }
 .cards img {
   width: 100%;
-  height: 150px;
+  height: auto;
   object-fit: cover;
 }
 .cards i {
-  font-size: 80px;
-  margin-top: 20px;
+  font-size: 50px;
+  margin-top: 10px;
 }
 .cards h4{
   margin: 12px 0 8px 0;
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: #333;
 }
 .cards p {
+  display: none;
   margin: 0 12px 12px 12px;
   font-size: 0.9em;
   color: #000000;
@@ -213,25 +213,6 @@ header {
 }
 svg {
   color: #fe5e0d;
-}
-@media (max-width: 600px) {
-  .cards {
-    width: 80px;
-    height: auto;
-  }
-  .cards img {
-    height: auto;
-  }
-  .cards h4{
-    font-size: 0.8em;
-  }
-  .cards p {
-    display: none;
-  }
-  .cards i {
-    font-size: 50px;
-    margin-top: 10px;
-  }
 }
 
 main {
@@ -268,5 +249,52 @@ footer i:hover{
   }
   footer > div:last-child {
     justify-content: flex-end;
+  }
+}
+
+/* Projects styles */
+.projects-grid {
+  gap: 1rem;
+}
+.project-card {
+  border: none;
+  overflow: hidden;
+}
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 120px;
+}
+.project-card .card-body {
+  padding: 0.8rem;
+}
+.project-card .btn {
+  font-size: 0.85rem;
+}
+
+/* Modal carousel image */
+.modal .carousel-item img {
+  max-height: 70vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .project-thumb {
+    min-height: 80px;
+  }
+  .project-card .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-thumb {
+    min-height: 60px;
+  }
+  .project-card .card-body {
+    padding: 0.6rem;
   }
 }

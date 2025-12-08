@@ -298,3 +298,24 @@ footer i:hover{
     padding: 0.6rem;
   }
 }
+
+/* Mostrar cada projeto em coluna: imagem em cima, conteúdo abaixo */
+.project-card .row.g-0 {
+  display: flex;
+  flex-direction: column;
+}
+.project-card .col-4, .project-card .col-8 {
+  width: 100% !important;
+}
+.project-card .project-thumb {
+  min-height: 160px;
+  max-height: 220px;
+}
+.project-card .card-body {
+  padding-top: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  /* se quiser voltar ao layout em linha em telas grandes, ajuste aqui */
+  /* exemplo: .project-card .row.g-0 { flex-direction: row; } */
+}

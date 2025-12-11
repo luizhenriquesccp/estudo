@@ -305,7 +305,6 @@ footer i:hover{
   }
 }
 
-/* Mostrar cada projeto em coluna: imagem em cima, conteúdo abaixo */
 .project-card .row.g-0 {
   display: flex;
   flex-direction: column;
